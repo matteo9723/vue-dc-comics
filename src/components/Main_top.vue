@@ -15,7 +15,7 @@ export default {
 
 <style lang="scss" scoped>
   .main-top{
-    background-color: black;
+    background-color: #1C1C1C;
     .container{
     width: 80%;
     margin: 0 auto;

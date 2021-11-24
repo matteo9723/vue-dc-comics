@@ -32,16 +32,13 @@ export default {
 <style lang="scss" scoped>
   .container{
     width: 80%;
-    height: 150px;
+    height: 120px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .left{
-   
-  };
   .right{
    
     height: 100%;
@@ -59,14 +56,10 @@ export default {
         height: 100%;
         color: rgb(73, 72, 72);
         text-decoration: none;
+        font-weight: bolder;
         &:hover{
           color: rgb(11, 163, 163);
         };
-        &.active{
-          // color: rgb(11, 163, 163);
-          // border-bottom: 2px solid rgb(11, 163, 163);
-          
-        }
         li{
           margin: 0 10px;
           text-transform: uppercase;
