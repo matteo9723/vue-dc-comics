@@ -99,6 +99,7 @@ export default {
       align-items: center;
       img{
        width:  100%;
+       z-index: 0;
       };
     };
   };

@@ -1,7 +1,12 @@
 <template>
   <div class="main-top">
+    <div class="jumbotron">
+
+    </div>
     <div class="container"> 
-      <h1>-->Content goes here  </h1>
+     <div class="cards">
+
+     </div>
     </div>
   </div>
   
@@ -16,10 +21,13 @@ export default {
 <style lang="scss" scoped>
   .main-top{
     background-color: #1C1C1C;
+    .jumbotron{
+      
+    };
     .container{
     width: 80%;
     margin: 0 auto;
-    height: 100px;
+    min-height: 100px;
     display: flex;
     align-items: center;
      h1{
