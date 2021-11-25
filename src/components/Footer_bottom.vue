@@ -23,6 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/img/style/vars.scss";
   .footer-bottom{
     background-color: rgb(73, 71, 71);
     height: 120px;
@@ -39,7 +40,7 @@ export default {
           padding: 10px;
           color: white;
           text-transform: uppercase;
-          border: 3px solid rgb(4, 140, 145);
+          border: 3px solid $azzurro;
           cursor: pointer;
         };
         .social{
@@ -47,7 +48,7 @@ export default {
           align-items: center;
           h3{
             text-transform: uppercase;
-            color: aqua;
+            color: $azzurro;
             margin: 0 30px,
           };
           img{

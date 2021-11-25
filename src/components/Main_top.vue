@@ -4,6 +4,11 @@
 
     </div>
     <div class="container"> 
+     <div class="current-series">
+       <h2>current series</h2>
+     </div> 
+    
+
      <div class="cards">
 
        <div v-for="(item,index) in cardList" :key=(index) class="card ">
@@ -11,6 +16,10 @@
          <div class="series">{{item.series}}</div>
        </div>
       
+       <div class="load-more">
+         <h3>load more</h3>
+       </div>
+
      </div>
     </div>
   </div>
@@ -102,6 +111,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/img/style/vars.scss";
   .main-top{
     background-color: #1C1C1C;
     .jumbotron{
@@ -110,18 +120,33 @@ export default {
       height: 300px;
     };
     .container{
-    width: 80%;
-    margin: 0 auto;
-    min-height: 100px;
-    display: flex;
-    align-items: center;
+      position: relative;
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+     .current-series{
+       position: absolute;
+       top: -30px;
+       background-color: $azzurro;
+       height: 40px;
+       width: 250px; 
+       margin-top: 10px ;
+       cursor: pointer;
+       h2{
+         color: white;
+         text-transform: uppercase;
+         text-align: center;
+         line-height: 40px;
+       };
+     } ;
      h1{
        color: wheat;
      };
      .cards{
        display: flex;
        flex-wrap: wrap;
-       padding: 20px 0;
+       padding: 30px 0;
+       justify-content: center;
        .card{
         height: calc(100vw / 8);
         width: calc(100vw / 8);
@@ -131,7 +156,6 @@ export default {
           object-position: 100% 0;
           width: 80%;
           height: 80%;
-          
         };
         .series{
           text-transform: uppercase;
@@ -141,6 +165,20 @@ export default {
           font-size:8px;
           width: 80%;
         };
+        
+       };
+       .load-more{
+         background-color: $azzurro;
+         height: 40px;
+         width: 200px; 
+         margin-top: 10px ;
+         cursor: pointer;
+         h3{
+           color: white;
+           text-transform: uppercase;
+           text-align: center;
+           line-height: 40px;
+         };
        };
      };
     };

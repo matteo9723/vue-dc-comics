@@ -35,13 +35,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/img/style/vars.scss";
   .main-bottom{
     height: 150px;
-    background-color: #0282F9;
+    background-color: $azzurro;
     .container{
-      width: 80%;
       height: 100%;
-      margin: 0 auto;
       display: flex;
       justify-content: space-around;
       align-content: center;

@@ -30,6 +30,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/img/style/vars.scss";
   .container{
     width: 80%;
     height: 120px;
@@ -58,7 +59,7 @@ export default {
         text-decoration: none;
         font-weight: bolder;
         &:hover{
-          color: rgb(11, 163, 163);
+          color: $azzurro;
         };
         li{
           margin: 0 10px;
@@ -67,7 +68,7 @@ export default {
         .underline{
           width: 80px;
           height: 5px;
-          background-color: rgb(11, 163, 163);
+          background-color: $azzurro;
           position: absolute;
           bottom: 0;
           left: 50%;

@@ -32,6 +32,7 @@ export default {
 </script>
 
 <style lang="scss">
+  @import "./assets/img/style/vars.scss";
   @import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital@1&family=Roboto&display=swap');
   *{
     font-family: 'Roboto';
