@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header :menu="linksList"/>
     <MainTop/>
     <MainBottom/>
     <FooterTop/>
@@ -19,6 +19,52 @@ import FooterBottom from './components/Footer_bottom.vue';
 
 export default {
   name: 'App',
+  data(){
+    return{
+      linksList:[
+        {
+          text: 'characters',
+          current: true
+        },
+        {
+          text: 'comics',
+          current: false
+        },
+        {
+          text: 'movies',
+          current: false
+        },
+        {
+          text: 'tv',
+          current: false
+        },
+        {
+          text: 'games',
+          current: false
+        },
+        {
+          text: 'collectibles',
+          current: false
+        },
+        {
+          text: 'videos',
+          current: false
+        },
+        {
+          text: 'fan',
+          current: false
+        },
+        {
+          text: 'news',
+          current: false
+        },
+        {
+          text: 'shop',
+          current: false
+        },
+      ]
+    }
+  },
   components: {
    
     Header,
@@ -32,7 +78,7 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "./assets/img/style/vars.scss";
+  @import "./assets/style/vars.scss";
   @import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital@1&family=Roboto&display=swap');
   *{
     font-family: 'Roboto';

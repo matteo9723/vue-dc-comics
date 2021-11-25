@@ -5,19 +5,12 @@
     </div>
     <div class="right">
       <ul>
-        <a href="" >
-          <li>characters</li>
-          <div class="underline "></div>
-        </a>
-        <a href=""><li>comics</li></a>
-        <a href=""><li>movies</li></a>
-        <a href=""><li>tv</li></a>
-        <a href=""><li>games</li></a>
-        <a href=""><li>collectibles</li></a>
-        <a href=""><li>videos</li></a>
-        <a href=""><li>fans</li></a>
-        <a href=""><li>news</li></a>
-        <a href=""><li>shop</li></a>
+        
+          <li @click="item.current='true'" v-for="(item , index) in menu" :key="index">
+            <a :class="{active: item.current}" href="#">{{item.text}}</a>
+            <div class="underline " :class="{block: item.current}"></div>
+          </li>
+        
       </ul>
     </div>
   </div>
@@ -26,11 +19,16 @@
 <script>
 export default {
   name:'Header',
+  props:{
+    menu: Array
+  },
 }
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/img/style/vars.scss";
+@import "../assets/style/vars.scss";
+ 
+
   .container{
     width: 80%;
     height: 120px;
@@ -48,8 +46,14 @@ export default {
       height: 100%;
       display: flex;
       list-style-type: none;
-    
-      a{
+      li{
+        margin: 0 10px;
+        text-transform: uppercase;
+        position: relative;
+       .active{
+         color: $azzurro;
+       } ;
+       a{
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -61,19 +65,20 @@ export default {
         &:hover{
           color: $azzurro;
         };
-        li{
-          margin: 0 10px;
-          text-transform: uppercase;
-        };
-        .underline{
-          width: 80px;
-          height: 5px;
-          background-color: $azzurro;
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-        }
+       }; 
+       .underline{
+         width: 80%;
+        height: 5px;
+        background-color: $azzurro;
+        position: absolute;
+         bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+       }
+       .block{
+        display: block;
+       } 
       };
     };
   };

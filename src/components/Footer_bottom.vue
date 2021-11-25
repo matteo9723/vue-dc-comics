@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/img/style/vars.scss";
+@import "../assets/style/vars.scss";
   .footer-bottom{
     background-color: rgb(73, 71, 71);
     height: 120px;

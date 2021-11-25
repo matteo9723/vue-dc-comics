@@ -111,7 +111,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/img/style/vars.scss";
+@import "../assets/style/vars.scss";
   .main-top{
     background-color: #1C1C1C;
     .jumbotron{

@@ -97,9 +97,9 @@ export default {
     };
     .right{
       align-items: center;
+       overflow: hidden;
       img{
        width:  100%;
-       z-index: 0;
       };
     };
   };

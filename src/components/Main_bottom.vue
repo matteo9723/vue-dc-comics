@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/img/style/vars.scss";
+@import "../assets/style/vars.scss";
   .main-bottom{
     height: 150px;
     background-color: $azzurro;
