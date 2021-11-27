@@ -1,0 +1,4 @@
+// la tilde ~ (alt+126) serve per fare riferimento a node_modules
+// per importare nei scss bisogna usare @ davanti a import  
+@import '~@fontsource/roboto/index.css';
+* { font-family: "Roboto"; }

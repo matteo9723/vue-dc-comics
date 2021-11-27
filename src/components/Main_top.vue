@@ -11,7 +11,7 @@
 
      <div class="cards">
 
-       <div v-for="(item,index) in cardList" :key=(index) class="card ">
+       <div  v-for="(item,index) in cardList" :key=(index) class="card " >
          <img :src="item.thumb" alt="">
          <div class="series">{{item.series}}</div>
        </div>
@@ -107,6 +107,7 @@ export default {
       ]
     };
   },
+ 
 }
 </script>
 

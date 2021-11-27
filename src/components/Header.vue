@@ -6,7 +6,7 @@
     <div class="right">
       <ul>
         
-          <li @click="item.current='true'" v-for="(item , index) in menu" :key="index">
+          <li @click="saluto(index)"  v-for="(item , index) in menu" :key="index">
             <a :class="{active: item.current}" href="#">{{item.text}}</a>
             <div class="underline " :class="{block: item.current}"></div>
           </li>
@@ -21,6 +21,21 @@ export default {
   name:'Header',
   props:{
     menu: Array
+  },
+   methods:{
+    saluto(index){
+      
+        for(let item in this.menu){
+           this.menu[item].current = false;
+        }
+      
+        if(this.menu[index].current == true){
+          this.menu[index].current = false;
+        }else{
+          this.menu[index].current = true;
+        }
+      
+    },
   },
 }
 </script>
